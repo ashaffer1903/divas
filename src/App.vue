@@ -1,5 +1,16 @@
 <template lang="pug">
   section
+    nav.level
+      p.level-item.has-text-centered
+        router-link(to="/") Home
+      p.level-item.has-text-centered
+        router-link(to="/about") About
+      p.level-item.has-text-centered.is-uppercase.is-size-2 Divas
+        span.has-text-grey HD
+      p.level-item.has-text-centered
+        router-link(to="/services") Services
+      p.level-item.has-text-centered
+        router-link(to="/contact") Contact
     div(id="app")
       <!--img(src="./assets/logo.png")-->
       router-view

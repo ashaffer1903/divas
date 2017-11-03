@@ -1,18 +1,5 @@
 <template lang="pug">
   section
-    article
-      nav.level
-        p.level-item.has-text-centered
-          a.link.is-info Home
-        p.level-item.has-text-centered
-          a.link.is-info About
-        p.level-item.has-text-centered.is-uppercase.is-size-2 Divas
-          span.has-text-grey HD
-        p.level-item.has-text-centered
-          a.link.is-info Services
-        p.level-item.has-text-centered
-          a.link.is-info Contact
-
     article.hero.is-medium.is-primary.is-bold(style="margin-top: 20px")
       div.hero-body
         div.container
