@@ -18,7 +18,7 @@
       div.container
         div.columns.is-centered
           div.column.is-one-third
-            table
+            table(align="center")
               tbody
                 tr
                   td
