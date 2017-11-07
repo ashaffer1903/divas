@@ -53,7 +53,7 @@
                   td(style="text-align: center")
                     b-icon.has-text-danger(icon="map-pin" size="is-medium")
                 tr
-                  td(style="text-align: center") 797 Union Street
+                  td(style="text-align: center") 151 Central Street
                 tr
                   td(style="text-align: center") Leominster, Ma 01453
 

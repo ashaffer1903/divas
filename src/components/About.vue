@@ -30,7 +30,6 @@
                       b-icon.is-info(icon="shopping-bag" size="is-large")
               h1.is-size-4.has-text-centered The Products
               p.has-text-centered.about-content {{products}}
-
 </template>
 
 <script>
