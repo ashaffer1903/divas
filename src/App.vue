@@ -1,19 +1,23 @@
 <template lang="pug">
   section
     nav.level
-      p.level-item.has-text-centered
+      p.level-item.has-text-centered(v-bind:class="isActive('home')" v-on:click="updateActiveMenu('home')")
         router-link(to="/") Home
-      p.level-item.has-text-centered
+      p.level-item.has-text-centered(v-bind:class="isActive('about')" v-on:click="updateActiveMenu('about')")
         router-link(to="/about") About
       p.level-item.has-text-centered.is-uppercase.is-size-2 Divas
+        //        span
+          b-icon.is-danger.is-medium(icon="heart" style="padding-bottom: 5px")
+        //span Divas
         span.has-text-grey HD
-      p.level-item.has-text-centered
+      p.level-item.has-text-centered(v-bind:class="isActive('services')" v-on:click="updateActiveMenu('services')")
         router-link(to="/services") Services
-      p.level-item.has-text-centered
+      p.level-item.has-text-centered(v-bind:class="isActive('contact')" v-on:click="updateActiveMenu('contact')")
         router-link(to="/contact") Contact
     div(id="app")
       <!--img(src="./assets/logo.png")-->
-      router-view
+      section.background
+        router-view
     div.footer(id="footer")
       div.container
         div.columns.is-centered
@@ -70,7 +74,22 @@
 </template>
 <script>
   export default {
-    name: 'app'
+    name: 'app',
+    data () {
+      return {
+        active: ''
+      }
+    },
+    methods: {
+      updateActiveMenu: function (tab) {
+        this.active = tab
+      },
+      isActive: function (tab) {
+        if (this.active === tab) {
+          return 'active-menu'
+        }
+      }
+    }
   }
 </script>
 
@@ -86,4 +105,12 @@
     text-align: center;
     color: #2c3e50;
     margin-top: 60px;
+
+  .background
+    background-image: url("/static/brick-img.jpg");
+    min-height: 750px;
+
+  .active-menu
+    padding-bottom: 10px;
+    border-bottom: 6px solid #00d1b2;
 </style>

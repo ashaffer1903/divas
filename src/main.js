@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import Buefy from 'buefy'
 import * as VueGoogleMaps from 'vue2-google-maps'
+import VueCarousel from 'vue-carousel'
 
 Vue.config.productionTip = false
 
@@ -16,6 +17,8 @@ Vue.use(VueGoogleMaps, {
     libraries: 'places, drawing'
   }
 })
+
+Vue.use(VueCarousel)
 
 /* eslint-disable no-new */
 new Vue({
