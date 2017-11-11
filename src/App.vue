@@ -1,19 +1,30 @@
 <template lang="pug">
   section
     nav.level
-      p.level-item.has-text-centered(v-bind:class="isActive('home')" v-on:click="updateActiveMenu('home')")
+      p.level-item.has-text-centered(v-on:click="updateActiveMenu('home')")
         router-link(to="/") Home
-      p.level-item.has-text-centered(v-bind:class="isActive('about')" v-on:click="updateActiveMenu('about')")
+      p.level-item.has-text-centered(v-on:click="updateActiveMenu('about')")
         router-link(to="/about") About
       p.level-item.has-text-centered.is-uppercase.is-size-2 Divas
         //        span
           b-icon.is-danger.is-medium(icon="heart" style="padding-bottom: 5px")
         //span Divas
         span.has-text-grey HD
-      p.level-item.has-text-centered(v-bind:class="isActive('services')" v-on:click="updateActiveMenu('services')")
+      p.level-item.has-text-centered(v-on:click="updateActiveMenu('services')")
         router-link(to="/services") Services
-      p.level-item.has-text-centered(v-bind:class="isActive('contact')" v-on:click="updateActiveMenu('contact')")
+      p.level-item.has-text-centered(v-on:click="updateActiveMenu('contact')")
         router-link(to="/contact") Contact
+    nav.level
+      p.level-item(v-bind:class="isActive('home')")
+      p.level-item(v-bind:class="isActive('about')")
+      p.level-item(style="padding-right: 40px")
+        span.title.is-size-4(style="padding-right: 5px") We
+        span
+          b-icon.is-danger.is-medium(icon="heart")
+        span.title.is-size-4(style="padding-left: 5px") Hair
+      p.level-item(v-bind:class="isActive('services')")
+      p.level-item(v-bind:class="isActive('contact')")
+
     div(id="app")
       <!--img(src="./assets/logo.png")-->
       section.background
@@ -111,6 +122,6 @@
     min-height: 750px;
 
   .active-menu
-    padding-bottom: 10px;
+    margin-bottom: 20px;
     border-bottom: 6px solid #00d1b2;
 </style>

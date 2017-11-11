@@ -4,7 +4,7 @@
       div.container(style="padding-top: 30px; padding-bottom: 50px")
         div.columns
           div.column.is-one-third
-            div.box
+            div.box.about-detail
               table(align="center")
                 tbody
                   tr
@@ -13,7 +13,7 @@
               h1.is-size-4.has-text-centered The History
               p.has-text-centered.about-content {{history}}
           div.column.is-one-third
-            div.box
+            div.box.about-detail
               table(align="center")
                 tbody
                   tr
@@ -22,7 +22,7 @@
               h1.is-size-4.has-text-centered The Team
               p.has-text-centered.about-content {{team}}
           div.column.is-one-third
-            div.box
+            div.box.about-detail
               table(align="center")
                 tbody
                   tr
@@ -75,6 +75,10 @@
 
   .about-content {
     padding-top: 15px;
+  }
+
+  .about-detail {
+    min-height: 450px;
   }
 
 </style>
