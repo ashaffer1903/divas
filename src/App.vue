@@ -6,9 +6,6 @@
       p.level-item.has-text-centered(v-on:click="updateActiveMenu('about')")
         router-link(to="/about") About
       p.level-item.has-text-centered.is-uppercase.is-size-2 Divas
-        //        span
-          b-icon.is-danger.is-medium(icon="heart" style="padding-bottom: 5px")
-        //span Divas
         span.has-text-grey HD
       p.level-item.has-text-centered(v-on:click="updateActiveMenu('services')")
         router-link(to="/services") Services

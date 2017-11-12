@@ -9,7 +9,9 @@
                 tbody
                   tr
                     td
-                      b-icon.is-primary(icon="home" size="is-large")
+                      span.fa-stack.fa-5x.has-text-primary
+                        i.fa.fa-circle.fa-stack-2x
+                        i.fa.fa-home.fa-stack-1x.fa-inverse
               h1.is-size-4.has-text-centered The History
               p.has-text-centered.about-content {{history}}
           div.column.is-one-third
@@ -18,7 +20,9 @@
                 tbody
                   tr
                     td
-                      b-icon.is-danger(icon="user-circle" size="is-large")
+                      span.fa-stack.fa-5x.has-text-primary
+                        i.fa.fa-circle.fa-stack-2x
+                        i.fa.fa-user.fa-stack-1x.fa-inverse
               h1.is-size-4.has-text-centered The Team
               p.has-text-centered.about-content {{team}}
           div.column.is-one-third
@@ -27,7 +31,9 @@
                 tbody
                   tr
                     td
-                      b-icon.is-info(icon="shopping-bag" size="is-large")
+                      span.fa-stack.fa-5x.has-text-primary
+                        i.fa.fa-circle.fa-stack-2x
+                        i.fa.fa-shopping-bag.fa-stack-1x.fa-inverse
               h1.is-size-4.has-text-centered The Products
               p.has-text-centered.about-content {{products}}
 </template>
@@ -78,7 +84,7 @@
   }
 
   .about-detail {
-    min-height: 450px;
+    min-height: 500px;
   }
 
 </style>
